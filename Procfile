@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn tft_calculator:app
