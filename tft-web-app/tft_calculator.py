@@ -1,6 +1,5 @@
 import math
 
-# Function definitions
 def binomial_coefficient(n, k):
     return math.comb(n, k)
 
