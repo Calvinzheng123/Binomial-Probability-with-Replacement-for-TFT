@@ -14,15 +14,15 @@
         h1 {
             color: #333;
             text-align: center;
-
         }
         form {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
-        select {
+        select, input[type="number"] {
             padding: 8px;
             margin: 10px 0;
             width: 100%;
@@ -32,15 +32,29 @@
             background-color: #4CAF50;
             color: white;
             border: none;
+            padding: 10px 20px;
             cursor: pointer;
         }
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+        .pdf-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .pdf-page {
+            width: 48%; /* Adjust width to make both images fit */
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
     <h1>TFT 3-Star Probability Calculator</h1>
+
     <form action="/calculate" method="POST">
         <label for="level">Level:</label>
         <input type="number" id="level" name="level" min="1" max="11" required>
@@ -70,5 +84,13 @@
 
         <input type="submit" value="Calculate Probability">
     </form>
+
+    <h2>Statistics Explanation PDF</h2>
+    <div class="pdf-container">
+        <!-- Display PDF pages as images side by side -->
+        <img src="{{ url_for('static', filename='img/page_1.png') }}" class="pdf-page" alt="PDF Page 1">
+        <img src="{{ url_for('static', filename='img/page_2.png') }}" class="pdf-page" alt="PDF Page 2">
+    </div>
+
 </body>
 </html>
