@@ -27,8 +27,8 @@ def tft_probability_to_3_star(level, unit_cost, remaining_copies, total_rolls, c
         5: [45, 33, 20, 2, 0],
         6: [30, 40, 25, 5, 0],
         7: [19, 30, 40, 10, 1],
-        8: [18, 25, 32, 22, 3],
-        9: [15, 20, 25, 30, 10],
+        8: [17, 24, 32, 24, 3],
+        9: [15, 18, 25, 30, 12],
         10: [5, 10, 20, 40, 25],
         11: [1, 2, 12, 50, 35],
     }
@@ -37,7 +37,7 @@ def tft_probability_to_3_star(level, unit_cost, remaining_copies, total_rolls, c
         1: 30,
         2: 25,
         3: 18,
-        4: 12,
+        4: 10,
         5: 9
     }
 
@@ -53,9 +53,9 @@ def tft_probability_to_3_star(level, unit_cost, remaining_copies, total_rolls, c
 
 # Champion cost mapping
 champion_costs = {
-    1: ["Twitch", "Zoe", "Ziggs", "Blitzcrank", "Elise", "Warwick", "Nomsy", "Jayce", "Ashe", "Soraka", "Jax", "Poppy", "Lillia", "Seraphine"],
-    2: ["Zilean", "Kog'Maw", "Nilah", "Ahri", "Rumble", "Syndra", "Cassiopeia", "Galio", "Kassadin", "Nunu", "Akali", "Shyvana", "Tristana"],
-    3: ["Bard", "Ezreal", "Jinx", "Mordekaiser", "Hecarim", "Wukong", "Shen", "Hwei", "Katarina", "Swain", "Veigar", "Neeko", "Vex"],
-    4: ["Nami", "Tahm Kench", "Olaf", "Rakan", "Fiora", "Gwen", "Taric", "Ryze", "Varus", "Karma", "Nasus", "Kalista"],
-    5: ["Morganna", "Norra & Yuumi", "Briar", "Camille", "Xerath", "Milio", "Diana", "Smolder"]
+    1: ["Alistar", "Dr. Mundo", "Jax", "Kindred", "Kog’Maw", "Morgana", "Nidalee", "Poppy", "Seraphine", "Shaco", "Sylas", "Vi", "Zyra"],
+    2: ["Darius", "Ekko", "Graves", "Illaoi", "Jhin", "LeBlanc", "Naafiri", "Rhaast", "Shyvana", "Skarner", "Twisted Fate", "Vayne", "Veigar"],
+    3: ["Braum", "Draven", "Elise", "Fiddlesticks", "Galio", "Gragas", "Jarvan IV", "Jinx", "Mordekaiser", "Rengar", "Senna", "Varus", "Yuumi"],
+    4: ["Annie", "Aphelios", "Brand", "Cho’Gath", "Leona", "Miss Fortune", "Neeko", "Sejuani", "Vex", "Xayah", "Zed", "Zeri", "Ziggs"],
+    5: ["Aurora", "Garen", "Kobuko", "Renekton", "Samira", "Urgot", "Viego", "Zac"]
 }
